@@ -33,11 +33,11 @@ Vagrant.configure("2") do |config|
 
     py3.vm.provision "file",
       source: "/",
-      destination: "~/Desktop/python-assignment"
+      destination: "~/Desktop/p1"
 
     
     py3.vm.provision "shell", path: "python-config.sh"
-    #config.vm.synced_folder "/flask_app", "~/flask_app"
+    #config.vm.synced_folder "/p1", "~/Desktop/p1"
     
 
   end
